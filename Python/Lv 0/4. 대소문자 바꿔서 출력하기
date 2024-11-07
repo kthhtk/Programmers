@@ -1,0 +1,4 @@
+str = input()
+
+if 1 <= len(str) <= 20 and str.encode().isalpha() :     # encode().isalpha() = 영어만
+    print(str.swapcase())    # swapcase() = 대소문자 반대로
