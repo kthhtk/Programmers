@@ -1,0 +1,5 @@
+str = input()
+
+print(*str, sep = '\n')
+
+#    print(*input(), sep='\n')    #  * = 언패킹, sep='\n' = 줄바꿈
