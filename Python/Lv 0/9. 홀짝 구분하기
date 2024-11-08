@@ -1,0 +1,28 @@
+
+n = int(input())
+
+if 1 <= n <= 1000 :
+    if n % 2 == 0 :
+        print(f'{n} is even')
+    else :
+        print(f'{n} is odd')
+
+
+
+
+#  n=int(input())
+#  print(f"{n} is {'eovdedn'[n&1::2]}")
+
+'''
+'eovdedn'[n&1::2] 부분 분석:
+    n&1: n을 2로 나눈 나머지(0 또는 1)를 구함
+    ::2: 문자열을 2칸씩 건너뛰며 슬라이싱
+  결과적으로:
+    n이 짝수(n&1 = 0)일 때: 'eovdedn'[0::2] → 'even'
+    n이 홀수(n&1 = 1)일 때: 'eovdedn'[1::2] → 'odd'
+
+f-string 사용:
+    f"{n} is {결과}"형식으로 출력
+    n이 5일 경우: "5 is odd"
+    n이 4일 경우: "4 is even"
+'''
