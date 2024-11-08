@@ -1,0 +1,8 @@
+
+str1, str2 = input().strip().split(' ')
+
+if 1 <= len(str1) and len(str2) <= 10 :
+    print(str1+str2)
+
+#  print(input().strip().replace(' ', ''))    #  strip() = 문자열 양쪽 끝의 공백 제거
+                                              #  replace(' ', '') = 모든 공백을 공백 없는걸로 변경  |  str.replace(old, new[, count])
